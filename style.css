@@ -47,6 +47,7 @@ body {
   color: var(--text-color);
   background-color: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .title {
