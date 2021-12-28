@@ -22,7 +22,7 @@ img {
 :root {
   --header--height: 4.5rem;
   /* colors */
-  --hue: 45;
+  --hue: 30;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 60% 57%);
   --base-color-second: hsl(var(--hue) 0% 67%);
@@ -31,6 +31,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --shadow-color: hsl(var(--hue) 0% 40%);
 
   /* Fonts */
   --title-font-size: 1.875rem;
@@ -279,6 +280,7 @@ nav.show .icon-close {
   top: -16.8%;
   left: 16.7%;
   z-index: 0;
+  box-shadow: 0 0 1.5em var(--shadow-color);
 }
 
 #home .image img {
@@ -328,10 +330,12 @@ nav.show .icon-close {
   top: -8.3%;
   left: -33%;
   z-index: 0;
+  box-shadow: 0 0 1.5em var(--shadow-color);
 }
 
 #about .image img {
   position: relative;
+  box-shadow: 0 0 1.5em var(--shadow-color);
 }
 
 #about .image img,
